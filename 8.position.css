@@ -1,0 +1,36 @@
+body {
+  height: 200vh;
+}
+
+.container {
+  width: 300px;
+  justify-items: 300px;
+  background-color: gray;
+  margin: 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  /* position: relative; This will make the element to stay relative to it's parent. */
+  background-color: red;
+}
+
+.green {
+  /* position: absolute; This will make the element to stay relative to root(html) element. */
+  background-color: green;
+}
+
+.blue {
+  /* position: fixed; This will make the element to stay fixed at a particular position over the screen, it acts relative to root(html) element. */
+  background-color: blue;
+}
+
+.orange {
+  /* position: sticky;
+  top: 100px; */
+  background-color: orangered;
+}
