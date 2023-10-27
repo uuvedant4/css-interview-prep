@@ -1,36 +1,179 @@
-body {
-  height: 200vh;
+@font-face {
+  font-family: "Typo Round";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Typo Round"),
+    url("https://fonts.cdnfonts.com/s/22654/Typo_Round_Italic_Demo.woff")
+      format("woff");
 }
 
-.container {
-  width: 300px;
-  justify-items: 300px;
-  background-color: gray;
-  margin: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.navbar {
+  font-size: 16px;
+  color: #ffffff99;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282828;
+  border-top: 1px solid #ffffff24;
+  border-bottom: 1px solid #ffffff24;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+}
+
+.left-part {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.left-part:first-child {
+  width: 20px;
+  height: 20px;
+}
+
+.left-part:first-child img {
+  width: 20px;
+  height: 20px;
+}
+
+.left-part .menu-options {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-options span {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-options span img {
+  width: 14px;
+  height: 14px;
+}
+
+#store {
+  color: #ffa116;
+}
+
+.right-part {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.bell {
+  width: 2px;
+  height: 20px;
+}
+
+.bell img {
+  width: 20px;
+  height: 20px;
+}
+
+.streak {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.streak img {
+  width: 20px;
+  height: 20px;
+}
+
+.img-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.img-container img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.pro {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 32px;
+  color: #ffa116;
+  background-color: #ffa1161f;
+  border-radius: 8px;
+  font-family: "Typo Round";
+}
+
+.bot {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 1%;
+  right: 2%;
+}
+
+.bot img {
+  height: 80px;
+  width: 85px;
 }
 
 .box {
   width: 100px;
   height: 100px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
 }
 
-.red {
-  /* position: relative; This will make the element to stay relative to it's parent. */
-  background-color: red;
-}
-
-.green {
-  /* position: absolute; This will make the element to stay relative to root(html) element. */
-  background-color: green;
-}
-
-.blue {
-  /* position: fixed; This will make the element to stay fixed at a particular position over the screen, it acts relative to root(html) element. */
+.relative {
+  height: 200px;
+  width: 200px;
+  border: 1px solid gray;
   background-color: blue;
+  /* position: relative; */
+  top: 20%;
+  left: 20%;
 }
 
-.orange {
-  /* position: sticky;
-  top: 100px; */
-  background-color: orangered;
+.relative div {
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  background-color: purple;
+  position: absolute;
+  left: 90%;
 }
