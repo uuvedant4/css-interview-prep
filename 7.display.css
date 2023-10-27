@@ -4,18 +4,33 @@
   box-sizing: border-box;
 }
 
-p {
-  /* display: inline-block; */
-  border: 4px solid red;
+.container {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(100, 99, 99);
 }
 
-span {
-  border: 4px solid red;
-  /* display: block; */
-  /* display: inline-block; */
-  width: 500px;
+/*
+Note: It will take only space which its content requires, not more than that. 
+.container {
+  display: inline;
+  width: 100px; No effect of width.
+  height: 100px; No effect of width.
+  border: 1px solid rgb(100, 99, 99);
+}
+*/
+
+/* 
+Note: It will take only space which its assigned with, no matter how big or less the content is. 
+
+.container {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(100, 99, 99);
 }
 
-/* Note: We can set height and width of elements which are `inline-block` and not for `inline` elements. */
-
-/* Note: `margin-top` and `margin-bottom` can not be defined for `inline` elements unlike `inline-block` elements. */
+#box-1 {
+  width: 300px;
+}
+  */
